@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Capital guessing game</title>
+  </head>
+  <body>
+
+
+      <p>Glavno mesto {{capital}}? </p>
+      <form action="/" method="post">
+        <input type="text" name="guess" />
+        <input type="hidden" name="country" value="{{capital}}">
+        <br />
+        <button type="submit" name="button">Pošlji</button>
+      </form>
+
+      <div class="rezultat">
+            {{correct}}
+      </div>
+
+
+  </body>
+</html>
